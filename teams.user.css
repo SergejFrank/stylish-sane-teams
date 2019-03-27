@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Sane Teams
 @namespace   timgthomas
-@version     0.1.0
+@version     0.2.0
 @homepageURL https://github.com/timgthomas/stylish-sane-teams
 @author      Tim G. Thomas <tim@timgthomas.com>
 ==/UserStyle== */
@@ -31,6 +31,11 @@
 
   /* --- Chat: Composer ----------------------------------------------------- */
 
+  /* Widen composer */
+  .ts-add-message .ts-new-message {
+    max-width: none;
+  }
+
   /* Round corners on composer */
   .ts-add-message .ts-new-message-footer {
     border-radius: 100px;
@@ -38,10 +43,33 @@
 
   /* --- Chat: Messages ----------------------------------------------------- */
 
+  /* Widen message list */
+  .ts-message-list-container,
+  virtual-repeat > .list-wrap > .item-wrap {
+    max-width: none;
+  }
+  .chat-style .thread-body:not(.self) .ts-message-thread-body {
+    margin-right: 7.4rem;
+  }
+
   /* Left-align "my" chat bubbles */
   .chat-style .self .ts-message-thread-body {
     justify-content: flex-start;
     padding-left: 4.2rem;
+  }
+  .chat-style .conversation-bubble-previous:not(.conversation-bubble) .self .message-body {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 16px;
+  }
+  .chat-style .conversation-bubble.conversation-bubble-previous .self .message-body {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 16px;
+  }
+  .chat-style .conversation-bubble:not(.conversation-bubble-previous) .self .message-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 16px;
   }
 
   /* Round corners on chat bubbles */
