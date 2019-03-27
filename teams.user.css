@@ -12,10 +12,15 @@
 
   /* --- Chat: Messages ----------------------------------------------------- */
 
-  /* Left-Align "My" Chat Bubbles */
+  /* Left-align "my" chat bubbles */
   .chat-style .self .ts-message-thread-body {
     justify-content: flex-start;
     padding-left: 4.2rem;
+  }
+
+  /* Round corners on chat bubbles */
+  .chat-style .message-body {
+    border-radius: 16px;
   }
 
 }
