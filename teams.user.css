@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name        Sane Teams
+@namespace   timgthomas
+@version     0.1
+@homepageURL https://github.com/timgthomas/stylish-sane-teams
+@author      Tim G. Thomas <tim@timgthomas.com>
+==/UserStyle== */
+
+@-moz-document domain('teams.microsoft.com') {
+
+  /* === CHAT =============================================================== */
+
+  /* --- Chat: Messages ----------------------------------------------------- */
+
+  /* Left-Align "My" Chat Bubbles */
+  .chat-style .self .ts-message-thread-body {
+    justify-content: flex-start;
+    padding-left: 4.2rem;
+  }
+
+}
