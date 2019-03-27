@@ -8,7 +8,33 @@
 
 @-moz-document domain('teams.microsoft.com') {
 
+  /* === CHROME ============================================================= */
+
+  /* Hide "waffle header" (office links and title) */
+  .ts-waffle .waffle-header {
+    display: none;
+  }
+
+  /* Round action bar */
+  .app-top-power-bar .ts-header-search {
+    border-radius: 100px;
+  }
+
+  /* === NAVIGATION ========================================================= */
+
+  /* Hide "Get app" button */
+  #get-app-button {
+    display: none;
+  }
+
   /* === CHAT =============================================================== */
+
+  /* --- Chat: Composer ----------------------------------------------------- */
+
+  /* Round corners on composer */
+  .ts-add-message .ts-new-message-footer {
+    border-radius: 100px;
+  }
 
   /* --- Chat: Messages ----------------------------------------------------- */
 
@@ -21,6 +47,14 @@
   /* Round corners on chat bubbles */
   .chat-style .message-body {
     border-radius: 16px;
+  }
+
+  /* Stop animated emojis */
+  [class^='animated-emoticon'] img {
+    padding-left: 0;
+  }
+  .zoetrope {
+      display: none !important;
   }
 
 }
