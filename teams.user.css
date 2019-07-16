@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name        Sane Teams
 @namespace   timgthomas
-@version     0.2.0
+@version     0.2.1
 @homepageURL https://github.com/SergejFrank/stylish-sane-teams
 @author      Tim G. Thomas <tim@timgthomas.com> / Sergej Frank
 ==/UserStyle== */
@@ -103,7 +103,7 @@
 }
 .chrome .chat-list .cle-timestamp,
 .chrome .chat-list .cle-preview,
-.chrome .profile-img-parent img,
+.chrome .recipient-group-list-item .profile-img-parent img,
 .chrome .profile-img-parent-bot img,
 .chrome .chat-list .cle-avatar .left-rail-profile-bot-img {
   display: none;
